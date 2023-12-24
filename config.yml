@@ -1,1 +1,3 @@
 mirror_camera: True # set as true if your device has camera mirrored, false otherwise
+max_pitch: 2093 # an actual theremin's range can go from C2 (65.4Hz) to C7 (2093Hz) according to a few google searches
+min_pitch: 65.4
