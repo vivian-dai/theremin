@@ -42,11 +42,13 @@ while 1:
                 if cy > mhpy:
                     mhpy = cy
                 
+                # TODO: draw a theremin on the screen, probably add instructions too
                 cv2.circle(image, (cx, cy), 8, (255, 255, 0), cv2.FILLED)
                 mp_draw.draw_landmarks(image, hand_land_mark, mph.HAND_CONNECTIONS)
             mhp.append((mhpx, mhpy))
         if len(mhp) == 2:
             # figure out which is pitch and which is volume
+            # TODO: pitch perception to frequency is actually logarithmic, not linear, make some linearization function
             if mhp[0][0] > mhp[1][0]:
                 pitch = ((mhp[0][0] - (dimensions[1]/2))/(dimensions[1]/2)) * (config["max_pitch"] - config["min_pitch"]) + config["min_pitch"] # normalize pitch
                 volume = (dimensions[0] - mhp[1][1]) / dimensions[0]
