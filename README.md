@@ -7,6 +7,11 @@ I'm too poor to make a [pyrophone](https://en.wikipedia.org/wiki/Pyrophone) and 
 1. Run `pip install -r requirements.txt` to install all necessary libraries
 2. Look through [`config.yml`](./config.yml) and set any variables you may want set
 
+## Dependencies
+Some weird nitpicky things about the libraries I'm using:
+1. mediapipe above 0.10.9 doesn't work
+2. Python above 3.11 doesn't work (and there's probably a lower bound too but I have yet to try)
+
 ## Usage/Instruction Manual
 1. Run [`main.py`](./src/main.py) in the `/src/` folder
 2. The way a theremin works: 
