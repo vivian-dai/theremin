@@ -1,4 +1,5 @@
 mediapipe==0.10.9
+numpy==1.23.5
 opencv-python==4.8.1.78
 pyaudio==0.2.12
 pyyaml==6.0.1
